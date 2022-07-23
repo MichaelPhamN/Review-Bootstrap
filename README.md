@@ -62,5 +62,23 @@ Containers are used to pad the content inside of them. There are two container c
 
 ![Bootstrap Grid System](https://miro.medium.com/max/2342/1*Wg3dRY_fGQUvwhBplltkoQ.png)
 
-#### II.2. Grid classes
+- Auto Layout Columns
 
+![Auto-Layout-Columns](http://apycom.com/bootstrap-components/data/upload/2017/04/equalcolumn.jpg)
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">1 of 2</div> <!-- Auto recognize col is col-6 -->
+    <div class="col">1 of 2</div> <!-- Auto recognize col is col-6 -->
+  </div>
+  <div class="row">
+    <div class="col">1 of 3</div> <!-- Auto recognize col is col-4 -->
+    <div class="col">1 of 3</div> <!-- Auto recognize col is col-4 -->
+    <div class="col">1 of 3</div> <!-- Auto recognize col is col-4 -->
+  </div>
+</div>
+```
+
+- Mix and match
+
+![Mix-And-Match](https://s1.o7planning.com/en/11963/images/21452841.gif)
