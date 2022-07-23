@@ -79,6 +79,66 @@ Containers are used to pad the content inside of them. There are two container c
 </div>
 ```
 
+- Setting one fixed width
+
+![Setting-one-fixed-width](https://designmodo.com/wp-content/uploads/2021/03/11.png)
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">Column 1</div> <!-- Auto recognize width -->
+    <div class="col">Column 2</div> <!-- Auto recognize width -->
+    <div class="col">Column 3</div> <!-- Auto recognize width -->
+  </div>
+  <div class="row">
+    <div class="col">Column 3/12</div> <!-- Auto recognize width -->
+    <div class="col-6">Column 6/12</div> <!-- Fixed width -->
+    <div class="col">Column 3/12</div> <!-- Auto recognize width -->
+  </div>
+</div>
+```
+
+
+
 - Mix and match
 
 ![Mix-And-Match](https://s1.o7planning.com/en/11963/images/21452841.gif)
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-sm-6"> 6 columns if width < 768px and > 567px | 2 columns if width > 768 px </div>
+    <div class="col-md-10 col-sm-6"> 6 columns if width < 768px and > 567px | 10 columns if width > 768 px </div>      
+  </div>
+</div>  
+```
+
+- Nested Columns
+
+![Nested-Columns](https://i.stack.imgur.com/D8J1p.jpg)
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-9"> <!-- Left column col-md-9 -->
+      <div class="row">
+        <div class="col">col-md-9</div>
+      </div>
+      <div class="row">
+        <div class="col">col-md-9</div>
+      </div>
+    </div>
+    <div class="col-md-3"> <!-- Right column col-md-3 -->
+      <div class="row">
+        <div class="col">col-md-3</div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### III. Colors
+#### III.1. Text colors
+The classes for text colors are: .text-muted, .text-primary (blue), .text-success (green), .text-info, .text-warning (yellow), .text-danger (red), .text-secondary (gray), .text-white, .text-dark, .text-body (default body color/often black) and .text-light
+
+#### III.2. Background colors
+The classes for background colors are: .bg-primary (blue), .bg-success (green), .bg-info, .bg-warning (yellow), .bg-danger (red), .bg-secondary (gray), .bg-dark and .bg-light
