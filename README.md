@@ -138,7 +138,360 @@ Containers are used to pad the content inside of them. There are two container c
 
 ### III. Colors
 #### III.1. Text colors
-The classes for text colors are: .text-muted, .text-primary (blue), .text-success (green), .text-info, .text-warning (yellow), .text-danger (red), .text-secondary (gray), .text-white, .text-dark, .text-body (default body color/often black) and .text-light
+The classes for text colors are: .text-muted, .text-primary (blue), .text-success (green), .text-info (viridian), .text-warning (yellow), .text-danger (red), .text-secondary (gray), .text-white, .text-dark, .text-body (default body color/often black) and .text-light
 
 #### III.2. Background colors
-The classes for background colors are: .bg-primary (blue), .bg-success (green), .bg-info, .bg-warning (yellow), .bg-danger (red), .bg-secondary (gray), .bg-dark and .bg-light
+The classes for background colors are: .bg-primary (blue), .bg-success (green), .bg-info (viridian), .bg-warning (yellow), .bg-danger (red), .bg-secondary (gray), .bg-dark and .bg-light
+
+### IV. Components
+#### IV.1. Forms
+- Block input form
+```html
+<!-- Input Text -->
+<div class="form-group">
+  <label>Email address</label>
+  <input type="text" class="form-control" placeholder="Email address"/>
+</div>
+
+<!-- Select -->
+<div class="form-group">
+  <label>Nationality</label>
+  <select class="form-control">
+    <option>United States</option>
+    <option>Vietnam</option>
+    <option>Brasil</option>
+  </select>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label>Description</label>
+  <textarea class="form-control" rows="4"></textarea>
+</div>
+
+<!-- Upload -->
+<div class="form-group">
+  <label>Calendar</label>
+  <input type="date" class="form-control-file"/>
+</div>
+
+<!-- Calendar -->
+<div class="form-group">
+  <label>Calendar</label>
+  <input type="date" class="form-control"/>
+</div>
+
+<!-- Checkbox -->
+<div class="form-check">
+  <input type="checkbox" class="form-check-input"/>
+  <label class="form-check-label">Checkbox</label>
+</div>  
+
+<!-- Radio Button -->
+<div class="form-check">
+  <input type="radio" class="form-check-input" checked/>
+  <label class="form-check-label">Radio Button</label>
+</div>    
+```
+https://codepen.io/michaelphamngo/pen/NWYgoeE
+
+- Inline input form
+```html
+<!-- Input Text -->
+<div class="row form-group">
+  <label class="col-2 col-form-label">Email address</label>
+  <div class="col-10">
+    <input type="email" class="form-control" placeholder="Email address">
+  </div>
+</div>  
+
+<!-- Select -->
+<div class="row form-group">
+  <label class="col-2 col-form-label">Nationality</label>
+  <div class="col-10">
+    <select class="form-control">
+      <option>United States</option>
+      <option>Vietnam</option>
+      <option>Brasil</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="row form-group">
+  <label class="col-2 col-form-label">Description</label>
+  <div class="col-10">
+    <textarea class="form-control" rows="4"></textarea>
+  </div>
+</div>
+
+<!-- Upload -->
+<div class="row form-group">
+  <label class="col-2 col-form-label">Upload</label>
+  <div class="col-10">
+    <input type="file" class="form-control-file"/>
+  </div>
+</div>
+
+<!-- Calendar -->
+<div class="row form-group">
+  <label class="col-2 col-form-label">Calendar</label>
+  <div class="col-10">
+    <input type="date" class="form-control"/>
+  </div>
+</div>
+
+<!-- Checkbox -->
+<div class="row form-group">
+  <div class="col-2">Checkboxes</div>
+  <div class="col-10">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input"/>
+      <label class="form-check-label">Checkbox 1</label>        
+    </div>      
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input"/>
+      <label class="form-check-label">Checkbox 2</label>        
+    </div>      
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input"/>
+      <label class="form-check-label">Checkbox 3</label>        
+    </div>      
+  </div>
+</div>  
+
+<!-- Radio Button -->
+ <div class="row form-group">
+  <label class="col-2 col-form-label">Radio Buttons</label>
+  <div class="col-10">
+      <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input" checked/>
+        <label class="form-check-label">Radio Button 1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input"/>
+        <label class="form-check-label">Radio Button 2</label>     
+      </div>
+  </div>
+</div>   
+
+```
+https://codepen.io/michaelphamngo/pen/XWEgGPg/c93830a8a46f27b822d5543307bfdc6b
+
+#### IV.2. Alerts
+```html
+<div class="alert alert-primary">
+  .alert .alert-primary
+</div>
+```
+https://codepen.io/michaelphamngo/pen/JjLJabe
+
+#### IV.3. Badge
+```html
+<!-- Button with badge span -->
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">4</span>
+</button>
+
+<!-- Badge span -->
+<span class="badge badge-primary">Primary</span>
+
+<!-- Pill Badge span -->
+<span class="badge badge-pill badge-primary">Primary</span>
+
+<!-- Badge link -->
+<a href="#" class="badge badge-pill badge-primary">Link Primary</a>
+```
+https://codepen.io/michaelphamngo/pen/xxWrapM
+
+#### IV.4. Breadcrumb
+```html
+<nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active">Data</li>
+  </ol>
+</nav>
+```
+https://codepen.io/michaelphamngo/pen/JjLJmEd
+
+#### IV.5. Buttons and Group Buttons 
+```html
+<!-- Button .btn .btn-primary -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Link button .btn .btn-primary -->
+<a class="btn btn-primary" href="#" role="button">Link</a>
+
+<!-- Input button .btn .btn-primary -->
+<input class="btn btn-primary" type="button" value="Input">
+
+<!-- Outline Button .btn .btn-outline-primary -->
+<button type="button" class="btn btn-outline-primary">Outline Button Primary</button>
+
+<!-- Large Button .btn .btn-primary btn-lg-->
+<button type="button" class="btn btn-primary btn-lg">Large Primary Button</button>
+
+<!-- Small Button .btn .btn-primary btn-sm-->
+<button type="button" class="btn btn-primary btn-sm">Small Primary Button</button>
+
+<!-- Large Block Button .btn .btn-primary btn-lg btn-block-->
+<button type="button" class="btn btn-primary btn-lg btn-block">Large Block Primary Button</button>
+
+<!-- Button with active state -->
+<button type="button" class="btn btn-primary active">Primary</button>
+
+<!-- Button with disable state -->
+<button type="button" class="btn btn-primary disabled">Primary</button>
+
+<!-- Group buttons -->
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+
+<!-- Dropdown buttons -->
+<div class="btn-group" role="group">
+  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item">Dropdown link</a>
+      <a class="dropdown-item">Dropdown link</a>      
+    </div>
+</div>
+
+<!-- Group vertical buttons -->
+<div class="btn-group-vertical" role="group">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+```
+https://codepen.io/michaelphamngo/pen/QWmgzgv
+
+#### IV.6. Dropdowns
+```html
+<!-- Dropdown -->
+<!-- Step 1: .btn-group -->
+<!-- Step 2: button [dropdown-toggle ~ down arrow] -->
+<!-- Step 3: dropdown menu -->
+<!-- Step 4: dropdown item -->
+<div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Dropdown item</a>
+    <a class="dropdown-item">Dropdown item</a>
+  </div>
+</div>
+
+<!-- Split Button -->
+<div class="btn-group">
+  <button class="btn btn-primary">Split Button</button>
+  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+
+<!-- Dropdown Toggle Arrow Direction -->
+<div class="btn-group"> <!-- Down -->        
+  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Down</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+<div class="btn-group dropup"> <!-- Up -->               
+  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Up</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+<div class="btn-group dropright">  <!-- Right -->               
+  <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Left</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+<div class="btn-group dropleft">  <!-- Left -->                     
+  <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Right</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+
+<!-- Menu display position -->
+<div class="btn-group">        
+  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Margin Left</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+<div class="btn-group">        
+  <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Margin Right</button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item">Action</a>
+    <a class="dropdown-item">Another Action</a>
+    <a class="dropdown-item">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item">Separated link</a>
+  </div>
+</div>
+```
+https://codepen.io/michaelphamngo/pen/rNdwPaP
+
+#### IV.7. Menu
+
+#### IV.8. Card
+
+#### IV.9. Carousel
+
+#### IV.10. Collapse
+
+#### IV.11. Input group
+
+#### IV.12. Jumbotron
+
+#### IV.13. List group
+
+#### IV.14. Modal
+
+#### IV.15. Navs
+
+#### IV.16. Navbar
+
+#### IV.17. Pagination
+
+#### IV.18. Popovers
+
+#### IV.19. Progress
+
+#### IV.20. Scrollspy
+
+#### IV.21. Tooltips
